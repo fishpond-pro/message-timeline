@@ -1,11 +1,11 @@
 import { useTarat } from 'tarat/connect'
 import React, { useState } from 'react'
 
-const Todos = () => {
+const Todos: React.FC<{ val: number }> = (props) => {
 
   return (
     <div>
-      todos
+      todos: {props.val}
     </div>
   )
 }
